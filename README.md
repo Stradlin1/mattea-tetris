@@ -30,10 +30,12 @@
 
 ## Audio / 背景音乐
 
-- **Game SFX:** original browser-generated 8-bit sounds for movement, rotation, hard drop, line clear, start and game over. The legacy MP3/WAV effects were removed.
-- **BGM:** click **♫ BGM · Play** at the bottom-right of the webpage to open the visible YouTube player for [this video](https://www.youtube.com/watch?v=cAemCx6mpyM). Use its Play/Pause controls. Closing the player stops playback. This does **not** download or redistribute the video's audio.
-- **Keyboard:** `M` toggles game sound effects only; background music is controlled separately in the YouTube player.
-- YouTube embeds depend on the video owner's embedding permissions, connection and browser autoplay policy. If playback is blocked, use the direct YouTube link in the panel. Click the game area to return keyboard focus after interacting with the player.
+- **游戏音效：** 使用浏览器 Web Audio API 合成原创 8-bit 提示音，包含移动、旋转、落地、消行、开始和游戏结束音效。
+- **内置 BGM：** `docs/bgm.wav` 是本项目原创的约 27 秒 8-bit 循环音乐，直接由 GitHub Pages 托管，不依赖 YouTube、外部链接或后台服务。
+- **播放方式：** 点击页面右下角 **♫ BGM · Play** 打开原生播放器并播放；播放器中可暂停、调节音量，关闭播放器会暂停音乐。
+- **按键：** `M` 仅控制游戏音效，不影响 BGM。WASD 键位与本地游戏进度存档保持不变。
+- 现代浏览器可能要求用户先点击页面才能播放声音；首次进入不强制自动播放。
+- YouTube 视频原音轨并未下载或上传到仓库；如果你拥有授权的音频文件，可以替换 `bgm.wav`。
 
 ## 游戏记录
 
