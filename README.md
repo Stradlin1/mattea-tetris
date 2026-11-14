@@ -1,3 +1,49 @@
+# Mattea Tetris
+
+基于 React / Redux / Immutable 的俄罗斯方块网页游戏，支持电脑键盘和手机触摸操作。
+
+**在线游玩（启用 GitHub Pages 后）**：https://stradlin1.github.io/mattea-tetris/
+
+## 键盘操作
+
+| 按键 | 功能 |
+| --- | --- |
+| **W** | 旋转方块（对应原来的 ↑） |
+| **A** | 向左移动（对应原来的 ←） |
+| **S** | 加速下落（对应原来的 ↓） |
+| **D** | 向右移动（对应原来的 →） |
+| **Space** | 直接落到底部 |
+| **P** | 暂停 / 继续 |
+| **R** | 重新开始 |
+| **M** | 开关音效（原来的 S） |
+
+首次进入游戏时，按 **Space** 开始。开始前可以使用 W / S 调整起始行数，A / D 调整初始速度。手机端可以使用页面上的虚拟按钮。
+
+## 网站发布
+
+网页构建文件已在仓库的 `docs/` 文件夹中，无需安装服务器或数据库。
+
+1. 打开 [Settings → Pages](https://github.com/Stradlin1/mattea-tetris/settings/pages)。
+2. 选择 **Source: Deploy from a branch**。
+3. 选择 **Branch: master**，目录选择 **/docs**，点击 **Save**。
+4. GitHub 发布成功后访问 https://stradlin1.github.io/mattea-tetris/ 。
+
+## 游戏记录
+
+当前保留原项目的 `localStorage` 机制：自动保存当前棋盘、游戏进度与最高分，刷新页面可继续。记录只保存在同一浏览器和设备中；清理网站数据可能导致记录丢失，不能跨设备同步。目前没有接入云端数据库，也不提供在线排行榜。
+
+## 开发
+
+```bash
+npm install
+npm start
+npm run build
+```
+
+本项目继承自 [chvin/react-tetris](https://github.com/chvin/react-tetris)，遵循 Apache-2.0 许可证。以下保留原项目说明。
+
+---
+
 ### English introduction
 Please view [README-EN.md](https://github.com/chvin/react-tetris/blob/master/README-EN.md)
 
