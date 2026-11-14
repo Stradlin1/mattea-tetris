@@ -50,7 +50,7 @@ var loaders = [
 // dev plugin
 var devPlugins =  [
   new CopyWebpackPlugin([
-    { from: './server/bgm.js' },
+    { from: './src/resource/music/bgm.wav' },
     { from: './src/resource/css/loader.css' },
   ]),
   // 热更新
@@ -75,7 +75,7 @@ var productionPlugins = [
   }),
   // 复制
   new CopyWebpackPlugin([
-    { from: './server/bgm.js' },
+    { from: './src/resource/music/bgm.wav' },
     { from: './src/resource/css/loader.css' },
   ]),
   // HTML 模板
