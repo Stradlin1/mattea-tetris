@@ -28,6 +28,13 @@
 3. 选择 **Branch: master**，目录选择 **/docs**，点击 **Save**。
 4. GitHub 发布成功后访问 https://stradlin1.github.io/mattea-tetris/ 。
 
+## Audio / 背景音乐
+
+- **Game SFX:** original browser-generated 8-bit sounds for movement, rotation, hard drop, line clear, start and game over. The legacy MP3/WAV effects were removed.
+- **BGM:** click **♫ BGM · Play** at the bottom-right of the webpage to open the visible YouTube player for [this video](https://www.youtube.com/watch?v=cAemCx6mpyM). Use its Play/Pause controls. Closing the player stops playback. This does **not** download or redistribute the video's audio.
+- **Keyboard:** `M` toggles game sound effects only; background music is controlled separately in the YouTube player.
+- YouTube embeds depend on the video owner's embedding permissions, connection and browser autoplay policy. If playback is blocked, use the direct YouTube link in the panel. Click the game area to return keyboard focus after interacting with the player.
+
 ## 游戏记录
 
 当前保留原项目的 `localStorage` 机制：自动保存当前棋盘、游戏进度与最高分，刷新页面可继续。记录只保存在同一浏览器和设备中；清理网站数据可能导致记录丢失，不能跨设备同步。目前没有接入云端数据库，也不提供在线排行榜。
