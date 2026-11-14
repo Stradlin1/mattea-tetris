@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  var REMOTE = './bgm.mp3?v=20261114-single';
+  var REMOTE = './BGM_320kbps.mp3?v=20261114-uploaded';
   var DB_NAME = 'mattea-tetris-bgm';
   var STORE = 'tracks';
   var KEY = 'selected';
